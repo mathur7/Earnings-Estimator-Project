@@ -7,6 +7,12 @@ $( document ).ready(function() {
       });   
       $("#sum").html(sum);
     });
+  
+  $("#calculate").click(function(){
+    var deductions = Number($("#insurance").val()) + Number($("#maintainence").val());
+    var net_earnings = calculateSum - deductions;
+    $("#final_estimate").html(net_earnings);
+  });
 
 });
 
