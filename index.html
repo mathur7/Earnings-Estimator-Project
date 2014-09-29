@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="earnings.css" type="text/css" />
+  <link href='http://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="earnings.js"></script>
+  <title>Earnings Project</title>
+</head>
+<body ng-app> 
+  <div class = "container">
+  <h1>EARNINGS CALCULATOR</h1>
+
+  <div>
+  <br>
+    <form name="earnings_form">
+      <p>Select the services you are enrolled in and how many hours you are putting in for each of them</p>
+      <p>Lyft @ $30/hr</p>
+        <select class="form-control">
+          <option value="">  hours/week</option>
+          <option value="60">  upto 2 hrs/week</option>
+          <option value="120">  upto 4 hrs/week</option>
+          <option value="180">  upto 6 hrs/week</option>
+          <option value="240">  upto 8 hrs/week</option>
+          <option value="300">  upto 10 hrs/week</option>
+        </select><br></br>
+      <p>Uber @ $35/hr</p>
+        <select class="form-control">
+          <option value="">  hours/week</option>
+          <option value="70">  upto 2 hrs/week</option>
+          <option value="140">  upto 4 hrs/week</option>
+          <option value="210">  upto 6 hrs/week</option>
+          <option value="280">  upto 8 hrs/week</option>
+          <option value="350">  upto 10 hrs/week</option>
+        </select><br></br>
+      <p>Sidecar @ $25/hr</p>
+        <select class="form-control">
+          <option value="">  hours/week</option>
+          <option value="50">  upto 2 hrs/week</option>
+          <option value="100">  upto 4 hrs/week</option>
+          <option value="150">  upto 6 hrs/week</option>
+          <option value="200">  upto 8 hrs/week</option>
+          <option value="250">  upto 10 hrs/week</option>
+        </select><br></br>
+        <div id='sum'>Income from Driving: </div><br>
+      <p>Insurance Cost</p> 
+      <input class="form-control" id="insurance" type="text"><br></br>
+      <p>Maintainence Cost</p>
+      <input class="form-control" id="maintainence" type="text"><br></br>
+      <button id="calculate">Calculate</button><br></br>
+      <div id="final_estimate"></div>
+    </form>
+    
+  
+  </div>
+</div>
+
+
+</body>
+</html>
+

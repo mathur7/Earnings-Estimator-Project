@@ -1,0 +1,24 @@
+.container {
+	background-color: rgba(39, 28, 28, 0.09);
+}
+
+form {
+  font-family: 'Oleo Script', cursive;
+  font-size:18px; 
+  text-align:left;
+  vertical-align:left;
+}
+
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  font-size: 40px;
+}
+
+header {
+  text-align:center;
+  padding:2px;
+}
+
+button {
+	border-radius: 5px;
+}
