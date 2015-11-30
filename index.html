@@ -9,7 +9,7 @@
   <script src="earnings.js"></script>
   <title>Earnings Project</title>
 </head>
-<body ng-app> 
+<body> 
   <div class = "container">
   <h1>EARNINGS CALCULATOR</h1>
 
@@ -46,15 +46,14 @@
           <option value="200">  upto 8 hrs/week</option>
           <option value="250">  upto 10 hrs/week</option>
         </select><br></br>
-        <div id='sum'>Income from Driving: </div><br>
+        <span> Income from Driving: </span><span id='sum'></span><br>
       <p>Insurance Cost</p> 
       <input class="form-control" id="insurance" type="text"><br></br>
       <p>Maintainence Cost</p>
       <input class="form-control" id="maintainence" type="text"><br></br>
-      <button id="calculate">Calculate</button><br></br>
-      <div id="final_estimate"></div>
-    </form>
-    
+      <button id="calculate" type="button">Calculate</button><br></br>
+      <div id="final_estimate"></div><br></br>
+    </form>  
   
   </div>
 </div>
