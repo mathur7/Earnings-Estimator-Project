@@ -6,12 +6,10 @@ $( document ).ready(function() {
   //and returns the sum of all options selected
   
     $("#calculate").click(function(){
-      console.log(calculateSum());
       var maintainenceCost = Number($("#maintainence").val());
       var insuranceCost = Number($("#insurance").val());
       var deductions = maintainenceCost + insuranceCost;
       var netEarnings = calculateSum() - deductions;
-      console.log(netEarnings);
       $("#final_estimate").html(netEarnings);
     });
 
